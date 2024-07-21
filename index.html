@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Function Demo</h1>
+
+        <div class="form-group">
+            <h2>Calculate Average</h2>
+            <label for="numbers">Enter numbers (comma separated):</label>
+            <input type="text" id="numbers" placeholder="e.g., 1, 2, 3, 4, 5">
+            <button onclick="showAverage()">Calculate Average</button>
+            <div class="result" id="averageResult"></div>
+        </div>
+
+        <div class="form-group">
+            <h2>Reverse Words</h2>
+            <label for="sentence">Enter a sentence:</label>
+            <textarea id="sentence" rows="3" placeholder="e.g., Hello world"></textarea>
+            <button onclick="showReversedWords()">Reverse Words</button>
+            <div class="result" id="reversedResult"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
